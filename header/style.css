@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+}
+.nav-link a {
+  color: white;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.55s ease;
+}
+
+.nav-link a:hover {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  background-image: linear-gradient(
+    to bottom right,
+    #4d9559 28.53%,
+    #133917 75.52%
+  );
+}
+
+section {
+  padding: 0 18%;
+}
+
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 40px;
+}
+.hero-text h4 {
+  padding: 0 0 45px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.hero-text h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 90px;
+  line-height: 1px;
+  color: white;
+  margin: 0 0 45px;
+}
+
+.hero-text p {
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+
+.hero-text a {
+  display: inline-block;
+  color: white;
+  background: #4d9559;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+}
+
+.hero-text a:hover {
+  background: transparent;
+  border: 1px solid white;
+  transform: translateX(8px);
+}
+.hero-text a.ctaa {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+.hero-text a.ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 8%;
+  transform: translateY(-50%);
+}
+.icons i {
+  display: block;
+  margin: 26px 0;
+  color: white;
+  font-size: 24px;
+  transition: all 0.5s ease;
+}
+.icons i:hover {
+  color: #4d9559;
+  transform: translateY(-5px);
+}
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i {
+  display: block;
+  background: #4d9559;
+  padding: 12px;
+  border-radius: 30px;
+  transition: all 0.55s ease;
+}
+.scroll-down i:hover {
+  transform: translateY(-5px);
+}
+.hero-img img{
+    height: 300px;
+}
+
+@media (max-width: 1060px) {
+  .hero {
+    padding: 15px 10%;
+    transition: 0.2s;
+  }
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+  .scroll-down {
+    right: 3%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 970px) {
+    .hero {
+        width: auto ;
+        /* display: flex; */
+    padding: 0 15%;
+    transition: 0.2s;
+  }
+  .hero-text h1{
+    font-size: 75px;
+
+  }
+  .hero-text h4 {
+    padding: 0 0 30px;
+  }
+  .hero-text h5{
+    padding: 10px 0 0 0;
+
+}
+.hero-img img{
+    width: 100%;
+    height: 50vh;
+}
+
+}
+@media (max-width:800px) {
+    
+    #menu-icon{
+        display: block;
+    }
+  .nav-link{
+    margin: 15px;
+
+  }
+  .hero{
+      display: flex;
+      flex-direction: column;
+      padding: 115px 0;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    .scroll-down{
+        display: none;
+    }
+    .nav-item {
+    position:absolute;
+    right: -100%;
+    top: 58px;
+    display: block;
+    gap: 10px;
+    background-color: #4d9559;
+    padding:50px;
+    transition: all .55s ease;
+   
+  }
+.nav-item.open{
+    right: 11.5%;
+}
+
+}
+
+
+@media (max-width:480px) {
+
+    .icons{
+        display: none;
+    }
+}
+@media (max-width:365px) {
+    .hero-text{
+        text-align: center;
+    }
+    .hero-text h1{
+       font-size: 50px;
+      } 
+    
+}
+
+
