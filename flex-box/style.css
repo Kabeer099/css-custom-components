@@ -1,0 +1,32 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    /* align-items: center; */
+    height: 60vh;
+    /* align-items:baseline; */
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap ; */
+    /* flex-flow: column-reverse; */
+}
+@media (max-width : 800px) {
+    .container{
+        flex-direction: row-reverse ;
+        flex-wrap: wrap;
+    }
+    
+}
+.f-item{
+    background-color: yellow;
+    height: 112px;
+    width: 112px;
+    border: 1px solid black;
+    margin: 12px ;
+}
+ .item-2{
+    /* order: 2; */
+
+} 
+/* .item-4{
+    align-self: center;
+} */
