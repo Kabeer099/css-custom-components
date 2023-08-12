@@ -1,0 +1,125 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "popins";
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+#left {
+  width: 40%;
+  height: 100%;
+  /* background-color: yellow; */
+  position: relative;
+}
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: center;
+}
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+}
+#lnavr i {
+  color: royalblue;
+}
+
+#textCenter {
+    margin-top:20px ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textCenter h1 {
+  font-size: 90px;
+  font-weight: 600;
+}
+
+#textCenter p{
+    opacity: .6;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textCenter a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    opacity: .8;
+}
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: blue;
+}
+
+#rtop {
+  width: 100%;
+  height: 50%;
+  background-color: green;
+  display: flex;
+}
+#rbottom {
+  width: 100%;
+  height: 50%;
+  /* background-color: rgb(112, 86, 0); */
+  background-image: url(https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80);
+  background-size: cover;
+  background-position: center;
+}
+#rtopleft {
+  width: 55%;
+  height: 100%;
+  /* background-color: rgb(128, 0, 0); */
+  background-image: url(https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-position: bottom;
+}
+#rtopright {
+    width: 45%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+    background-image: url(https://images.unsplash.com/photo-1579247289081-dc2a9832539c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width:500px) {
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+    
+}
